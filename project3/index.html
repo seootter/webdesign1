@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yes24 도서</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .bookInfo_wrapper {
+            display: flex;
+            width: 70%;
+            margin: 10px auto;
+            align-items: center;
+        }
+
+        .bookImgInfo img {
+            max-height: 140px;
+        }
+
+        .bookTextInfo p {
+            margin-bottom: 20px;
+        }
+
+        .bookTextInfo .bookTitle span:first-child {
+            font-size: 14px;
+            font-weight: bold ;
+        }
+
+        .bookTextInfo .bookTitle span:last-child {
+            font-size: 12px;
+            color: #888888;
+        }
+        .bookTextInfo .bookAuthor {
+            font-weight: lighter;
+            font-size: 12px;
+            color: #676767;
+        }
+
+        .bookTextInfo .bookPrice span:nth-child(1) {
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        .bookTextInfo .bookPrice {
+            font-size: 12px;
+        }
+
+        .bookTextInfo .bookPrice span:nth-child(2) {
+            border: 1px solid blue;
+            background: skyblue;
+            color: blue;
+            font-weight: bold;
+            padding: 0 5px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 도서의 정보-->
+    <section class="bookInfo_wrapper">
+        <!-- 도서 이미지 -->
+        <section class="bookImgInfo">
+            <img src="http://image.yes24.com/goods/96674934/XL">
+        </section>
+
+        <!-- 도서 정보 -->
+        <section class="bookTextInfo">
+            <!-- 도서 제목 -->
+            <P class="bookTitle">
+                <span>DO it! HTML+CSS+자바스크립트 웹 표준의 정석</span>
+                <span>한 권으로 끝내는 웹 기본 교과서</span>
+            </P>
+            
+            <!-- 도서 저자, 출판사, 출판일 -->
+            <P class="bookAuthor">
+                고경희 저 ㅣ 이지스퍼블리싱 ㅣ 2021년 01월
+            </P>
+
+            <!-- 가격 -->
+            <P class="bookPrice">
+                <span>27,000원</span> (10% 할인) <span>p</span> 1,500원
+            </P>
+        </section>
+    </section>
+</body>
+</html>

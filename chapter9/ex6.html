@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        #wrapper {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+        }
+        .box {
+            position: absolute; /* 이 속성은 기준점으로부터 얼마만큼 떨어질지 위치를 지정할 수 있는 속성 */
+            /* 이 속성을 사용하려면 반드시 기준점이 있어야하고 기준점이랑 포지션이 relative인 부모나 조상 태그임 */
+            width: 50px;
+            height: 50px;
+            background: #0094ff;
+        }
+        #crd1 {
+            top: 0; left: 0; 
+            /* top : 기준점으로부터 위에서 얼마나 떨어졌는지 */
+            /* left : 기준점으로부터 왼쪽으로 얼마나 떨어졌는지 */
+        }
+        #crd2 {
+            top: 0; right: 0;
+        }
+        #crd3 {
+            bottom:0; left: 0;
+        }
+        #crd4 {
+            bottom: 0; right: 0;
+        }
+        #crd5 {
+            top: 100px; left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <div class="box" id="crd1"></div>
+    <div class="box" id="crd2"></div>
+    <div class="box" id="crd3"></div>
+    <div class="box" id="crd4"></div>
+    <div class="box" id="crd5"></div>
+    </div>
+    
+</body>
+</html>
